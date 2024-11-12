@@ -9,6 +9,7 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
     overflow: hidden;
+    user-select: none;
 
     color: whitesmoke;
 }
@@ -125,10 +126,12 @@ body {
 }
 
 .pimg{
-    width: 50vh;
+    width: 40vh;
     margin-top: -150px;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 20vh;
     }
 
 

@@ -4,6 +4,7 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
     overflow: hidden;
+    user-select: none;
 
     color: whitesmoke;
 }
@@ -72,22 +73,6 @@ body {
     font-size: 3vh;
 }
 
-#week3{
-    background-image: url("../images/million\ monster.png");
-}
-
-#week3:hover{
-    cursor: pointer;
-    background-image: url("../images/million\ monster\ hover.png");
-}
-
-#flash{
-    position: absolute;
-    left: 50%;
-    top: 95%;
-
-    transform: translate(-50%,-95%);
-}
 
 /*--------------------phone style--------------------------------------*/
 
