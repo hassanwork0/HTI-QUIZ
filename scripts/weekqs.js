@@ -318,8 +318,8 @@ const aisheettwo = [
     "False",
 
     "True or False: In a state space graph, each state occurs only once.",
-    "True",
-    "False*"
+    "True*",
+    "False"
 ];
 
 var week = 0;
