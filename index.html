@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من سيربح كيس الشيبسي</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script>
+        weeks = 2;
+        function go_to(week){
+            localStorage.setItem("week",week);
+            location.replace("weeks/week.html");
+        }
+
+        function loadScore(){
+            for (let i = 1; i <= weeks; i++) {
+                if(localStorage.getItem(i)){
+                document.getElementById("week"+i+"res").innerHTML +=
+                localStorage.getItem(i);
+                }else{
+                document.getElementById("week"+i+"res").innerHTML+=0;
+            }
+        }
+        }
+    </script>
+</head>
+
+<body onload="loadScore()">
+
+    <div class="titlebar">
+        <div class="weekcont">
+            <div class="weekbtn">
+                <div class="opt">
+                    <h1 class="opt-t">سؤال الاسبوع</h1>
+                </div>
+            </div>
+        </div>
+        <h1 class="title">للأسئلة HTI اهلا و مرحبا بكم في لعبة</h1>
+        <img src="images/hti-logo.png" class="logo">
+    </div>
+
+    <div class="weeksbtns">
+        <div class="weekcont" id="one">
+            <div class="weekbtn">
+                <div class="opt" onclick="go_to(1)">
+                    <h1 class="opt-t">AI Sheet 1</h1>
+                </div>
+            </div>
+            <h1 class="weekres" id="week1res">درجة الكويز:</h1>
+        </div>
+    </div>
+    
+    <div class="weeksbtns">
+        <div class="weekcont" id="two">
+            <div class="weekbtn">
+                <div class="opt" onclick="go_to(2)">
+                    <h1 class="opt-t">AI Sheet 2</h1>
+                </div>
+            </div>
+            <h1 class="weekres" id="week2res">درجة الكويز:</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

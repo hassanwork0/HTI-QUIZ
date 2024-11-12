@@ -1,0 +1,147 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow: hidden;
+
+    color: whitesmoke;
+}
+
+.titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 4vh;
+}
+
+.logo{
+    width: 15%;
+    background-color: white;
+    border-radius: 20vh;
+}
+
+.weeksbtns {
+    padding-top: 5vh;
+    width: fit-content;
+    display: grid;              
+    grid-template-columns: repeat(2, 1fr);   
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;    
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 4%;
+     
+}
+.weekbtn{
+    width: fit-content;
+}
+
+.opt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/million.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-decoration: none; 
+
+    width: 60vh;
+
+}
+
+.opt-t {
+    color: whitesmoke;
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.opt:hover {
+    cursor: pointer;
+    background-image: url("../images/million - hover.png");
+}
+
+.weekres{
+    text-align: center;
+    font-size: 3vh;
+}
+
+#week3{
+    background-image: url("../images/million\ monster.png");
+}
+
+#week3:hover{
+    cursor: pointer;
+    background-image: url("../images/million\ monster\ hover.png");
+}
+
+#flash{
+    position: absolute;
+    left: 50%;
+    top: 95%;
+
+    transform: translate(-50%,-95%);
+}
+
+/*--------------------phone style--------------------------------------*/
+
+@media only screen and (max-device-width: 480px) {
+    #flash{
+        top:99%;
+    }
+    .logo{
+        width: 20%;
+    }
+    .title{
+        display: none;
+    }
+    .weeksbtns {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1px;  
+        margin-top: 4%;
+    }
+
+    .opt{
+        width: 40vh;
+    }
+
+    .opt-t {
+        font-size: 3vh;
+    }
+
+    #one{
+        grid-row: 1;
+    }
+    #two{
+        grid-row: 2;
+    }
+    #three{
+        grid-row: 3;
+    }
+    #four{
+        grid-row: 4;
+    }
+
+    
+    .weekres{
+        top: 28%;
+        left: 40%;
+        font-size: 100%;
+    }
+    
+
+    .weekopt{
+        width: 60%;
+        top: 16%;
+        left: 25%;
+        font-size: 120%;
+    }
+
+}
