@@ -162,8 +162,8 @@ const aisheetone = [
 
 const aisheettwo = [
     "In the PEAS model, the “P” stands for:",
-    "Perception*",
-    "Performance",
+    "Perception",
+    "Performance*",
     "Planning",
     "Problem-solving",
 
