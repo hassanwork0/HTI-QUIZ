@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="styles/style.css">
     <script>
-        weeks = 2;
+        weeks = 4;
         function go_to(week){
             localStorage.setItem("week",week);
             location.replace("weeks/week.html");
@@ -60,7 +60,27 @@
             </div>
             <h1 class="weekres" id="week2res">درجة الكويز:</h1>
         </div>
+        
+        <div class="weekcont" id="three">
+            <div class="weekbtn">
+                <div class="opt" onclick="go_to(3)">
+                    <h1 class="opt-t">AI Sheet 3</h1>
+                </div>
+            </div>
+            <h1 class="weekres" id="week3res">درجة الكويز:</h1>
+        </div>
+    
+        <div class="weekcont" id="four">
+            <div class="weekbtn">
+                <div class="opt" onclick="go_to(4)">
+                    <h1 class="opt-t">AI Sheet 4</h1>
+                </div>
+            </div>
+            <h1 class="weekres" id="week4res">درجة الكويز:</h1>
+        </div>
+        
     </div>
+    
 
     </div>
 </body>
