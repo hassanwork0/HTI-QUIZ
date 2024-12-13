@@ -357,7 +357,7 @@ const aisheetthree = [
     "Greedy Search",
     "Iterative Deepening Search*",
     "Uniform Cost Search (UCS)",
-    "A*",
+    "A star",
 
     "What is the space complexity of BFS?",
     "O(b)",
@@ -573,7 +573,7 @@ const aisheetfour = [
     "Which informed search algorithm focuses only on minimizing the heuristic value h(n)?",
     "Greedy Search*",
     "UCS",
-    "A* Search",
+    "A star Search",
     "BFS",
 
     "What does the value g(n) represent in A* Search?",
@@ -603,7 +603,7 @@ const aisheetfour = [
     "Which search algorithm is optimal for any admissible heuristic?",
     "UCS",
     "Greedy Search",
-    "A* Search*",
+    "A star Search*",
     "BFS",
 
     "What is the impact of an inconsistent heuristic in A* Search?",
